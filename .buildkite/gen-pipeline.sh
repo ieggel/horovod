@@ -78,6 +78,7 @@ run_test() {
   echo "  - docker-compose#v2.6.0:"
   echo "      run: ${test}"
   echo "      volumes: \"./artifacts:/artifacts\""
+  echo "      leave-volumes: true"
   echo "      config: docker-compose.test.yml"
   echo "      pull-retries: 3"
   echo "  - ecr#v1.2.0:"
